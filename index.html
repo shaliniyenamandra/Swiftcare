@@ -826,6 +826,25 @@
       </div>
     </div>
   </footer>
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00Dfj00000FrokR',
+				'SwiftCare_Web_Chat',
+				'https://orgfarm-b91d62e48a-dev-ed.develop.my.site.com/ESWSwiftCareWebChat1767380694752',
+				{
+					scrt2URL: 'https://orgfarm-b91d62e48a-dev-ed.develop.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://orgfarm-b91d62e48a-dev-ed.develop.my.site.com/ESWSwiftCareWebChat1767380694752/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
   <!-- Modal -->
   <div class="modal" id="modal">
@@ -952,3 +971,4 @@
   </script>
 </body>
 </html>
+
